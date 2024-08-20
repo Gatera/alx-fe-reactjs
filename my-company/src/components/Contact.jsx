@@ -46,7 +46,7 @@ function Contact() {
                     style={{ display: 'block', margin: '10px 0', width: '100%', padding: '10px' }}
                 />
 
-                <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#333', color: '#fff', border: 'none'}}>Send Message</button>
+                <button type="submit" style={{ padding: '10px 20px', backgroundColor: '#333', color: '#fff', border: 'none' }}>Send Message</button>
             </form>
         </div>
     );
