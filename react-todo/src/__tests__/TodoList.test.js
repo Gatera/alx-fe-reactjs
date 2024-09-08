@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect'; // Ensure this is installed
-import TodoList from '../components/TodoList'; // Adjust the path if needed
+import '@testing-library/jest-dom'; // Ensure jest-dom is installed
+import TodoList from '../components/TodoList';
 
 // Test initial render
 test('renders TodoList component with initial todos', () => {
@@ -34,6 +34,7 @@ test('toggles todo completion status', () => {
 // Test deleting a todo
 test('deletes a todo item', () => {
     render(<TodoList />);
-    fireEvent.click(screen.getByText('Delete', { selector: 'button' }));
+    const deleteButtons = screen.getAllByText('Delete');
+    fireEvent.click(deleteButtons[0]);
     expect(screen.queryByText('Learn React')).not.toBeInTheDocument();
 });
