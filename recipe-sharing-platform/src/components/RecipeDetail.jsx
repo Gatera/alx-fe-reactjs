@@ -43,7 +43,7 @@ function RecipeDetail() {
 export const recipeDetailsLoader = async ({ params }) => {
   const { recipeId } = params
 
-  const res = await fetch('/data/recipes.json')
+  const res = await fetch('/data/data.json')
 
   //Check if the response is OK
   if (!res.ok) {

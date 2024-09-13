@@ -9,7 +9,7 @@ function HomePage() {
     //Fetching data from the data.json file
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('/data/recipes.json')
+        const response = await fetch('/data/data.json')
         const data = await response.json()
         setRecipes(data)
       } catch (error) {
