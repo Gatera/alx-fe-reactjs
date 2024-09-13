@@ -28,8 +28,9 @@ function RecipeDetail() {
         </div>
         <div className="col-span-1 md:col-span-3 p-5 flex items-center">
           <div className="w-full">
-            <h1 className="text-2xl">{recipe.title}</h1>
+            <h1 className="text-2xl font-bold uppercase">{recipe.title}</h1>
             <h3 className="text-gray-600 mt-2">{recipe.summary}</h3>
+            <h2 className="text-xl font-bold mt-4">Instructions</h2>
             <p className="mt-2"><span className="font-bold">Cook Time:</span> {recipe.cookingTime}</p>
             <p className="mt-2"><span className="font-bold">Ingredients:</span> {recipe.ingredients.join(', ')}</p>
           </div>
