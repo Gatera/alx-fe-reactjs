@@ -1,74 +1,98 @@
 [
-    {
-      "id": 1,
-      "title": "Spaghetti Carbonara",
-      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-      "image": "/src/assets/carbonara.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Chicken Tikka Masala",
-      "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "/src/assets/tikka-masala.jpeg"
-    },
-    {
-      "id": 3,
-      "title": "Beef Stroganoff",
-      "summary": "A Russian dish of sautéed beef served in a sour cream sauce.",
-      "image": "/src/assets/beef-strog.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Margherita Pizza",
-      "summary": "A traditional Italian pizza topped with fresh tomatoes, mozzarella, and basil.",
-      "image": "/src/assets/margherita-pizza.jpeg"
-    },
-    {
-      "id": 5,
-      "title": "Pad Thai",
-      "summary": "A popular Thai stir-fried noodle dish made with shrimp, tofu, peanuts, and tamarind sauce.",
-      "image": "/src/assets/pad-thai.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Moussaka",
-      "summary": "A Greek casserole made with layers of eggplant, ground meat, and béchamel sauce.",
-      "image": "/src/assets/moussaka.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Shakshuka",
-      "summary": "A North African and Middle Eastern dish of poached eggs in a spicy tomato sauce.",
-      "image": "/src/assets/shakshuka.webp"
-    },
-    {
-      "id": 8,
-      "title": "Fish Tacos",
-      "summary": "Grilled or fried fish wrapped in tortillas with fresh salsa and creamy sauce.",
-      "image": "/src/assets/fish-tacos.webp"
-    },
-    {
-      "id": 9,
-      "title": "Ratatouille",
-      "summary": "A French Provençal stewed vegetable dish made with zucchini, eggplant, and tomatoes.",
-      "image": "/src/assets/ratatouille.jpg"
-    },
-    {
-      "id": 10,
-      "title": "Falafel",
-      "summary": "Deep-fried balls made from ground chickpeas, herbs, and spices, commonly served in pita bread.",
-      "image": "/src/assets/falafel.jpg"
-    },
-    {
-      "id": 11,
-      "title": "Tom Yum Soup",
-      "summary": "A hot and sour Thai soup made with shrimp, lemongrass, and lime juice.",
-      "image": "/src/assets/tom-yum.jpg"
-    },
-    {
-      "id": 12,
-      "title": "Eggplant Parmesan",
-      "summary": "Layers of fried eggplant slices baked with marinara sauce and mozzarella cheese.",
-      "image": "/src/assets/eggplant-parmesan.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "/src/assets/carbonara.jpg",
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan cheese", "Pancetta or bacon", "Black pepper", "Salt"],
+    "cookingTime": "20 minutes"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "/src/assets/tikka-masala.jpeg",
+    "ingredients": ["Chicken", "Yogurt", "Tomato sauce", "Garlic", "Ginger", "Garam masala", "Cream", "Cilantro"],
+    "cookingTime": "45 minutes"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stroganoff",
+    "summary": "A Russian dish of sautéed beef served in a sour cream sauce.",
+    "image": "/src/assets/beef-strog.jpg",
+    "ingredients": ["Beef", "Mushrooms", "Onions", "Sour cream", "Butter", "Flour", "Beef broth", "Dijon mustard"],
+    "cookingTime": "35 minutes"
+  },
+  {
+    "id": 4,
+    "title": "Margherita Pizza",
+    "summary": "A traditional Italian pizza topped with fresh tomatoes, mozzarella, and basil.",
+    "image": "/src/assets/margherita-pizza.jpeg",
+    "ingredients": ["Pizza dough", "Tomatoes", "Mozzarella cheese", "Basil leaves", "Olive oil", "Salt"],
+    "cookingTime": "15 minutes (plus 1 hour for dough rising)"
+  },
+  {
+    "id": 5,
+    "title": "Pad Thai",
+    "summary": "A popular Thai stir-fried noodle dish made with shrimp, tofu, peanuts, and tamarind sauce.",
+    "image": "/src/assets/pad-thai.jpg",
+    "ingredients": ["Rice noodles", "Shrimp", "Tofu", "Eggs", "Peanuts", "Tamarind paste", "Fish sauce", "Bean sprouts"],
+    "cookingTime": "30 minutes"
+  },
+  {
+    "id": 6,
+    "title": "Moussaka",
+    "summary": "A Greek casserole made with layers of eggplant, ground meat, and béchamel sauce.",
+    "image": "/src/assets/moussaka.jpg",
+    "ingredients": ["Eggplant", "Ground beef or lamb", "Tomatoes", "Onions", "Garlic", "Béchamel sauce", "Cheese"],
+    "cookingTime": "1 hour 15 minutes"
+  },
+  {
+    "id": 7,
+    "title": "Shakshuka",
+    "summary": "A North African and Middle Eastern dish of poached eggs in a spicy tomato sauce.",
+    "image": "/src/assets/shakshuka.webp",
+    "ingredients": ["Eggs", "Tomatoes", "Onions", "Garlic", "Bell peppers", "Cumin", "Paprika", "Cilantro"],
+    "cookingTime": "25 minutes"
+  },
+  {
+    "id": 8,
+    "title": "Fish Tacos",
+    "summary": "Grilled or fried fish wrapped in tortillas with fresh salsa and creamy sauce.",
+    "image": "/src/assets/fish-tacos.webp",
+    "ingredients": ["White fish", "Tortillas", "Cabbage", "Salsa", "Avocado", "Lime", "Sour cream"],
+    "cookingTime": "20 minutes"
+  },
+  {
+    "id": 9,
+    "title": "Ratatouille",
+    "summary": "A French Provençal stewed vegetable dish made with zucchini, eggplant, and tomatoes.",
+    "image": "/src/assets/ratatouille.jpg",
+    "ingredients": ["Zucchini", "Eggplant", "Tomatoes", "Onions", "Garlic", "Olive oil", "Thyme", "Basil"],
+    "cookingTime": "45 minutes"
+  },
+  {
+    "id": 10,
+    "title": "Falafel",
+    "summary": "Deep-fried balls made from ground chickpeas, herbs, and spices, commonly served in pita bread.",
+    "image": "/src/assets/falafel.jpg",
+    "ingredients": ["Chickpeas", "Garlic", "Onions", "Cilantro", "Parsley", "Cumin", "Coriander", "Flour", "Pita bread"],
+    "cookingTime": "30 minutes"
+  },
+  {
+    "id": 11,
+    "title": "Tom Yum Soup",
+    "summary": "A hot and sour Thai soup made with shrimp, lemongrass, and lime juice.",
+    "image": "/src/assets/tom-yum.jpg",
+    "ingredients": ["Shrimp", "Lemongrass", "Galangal", "Kaffir lime leaves", "Mushrooms", "Lime juice", "Fish sauce", "Chili paste"],
+    "cookingTime": "25 minutes"
+  },
+  {
+    "id": 12,
+    "title": "Eggplant Parmesan",
+    "summary": "Layers of fried eggplant slices baked with marinara sauce and mozzarella cheese.",
+    "image": "/src/assets/eggplant-parmesan.jpg",
+    "ingredients": ["Eggplant", "Mozzarella cheese", "Parmesan cheese", "Marinara sauce", "Basil", "Breadcrumbs"],
+    "cookingTime": "45 minutes"
+  }
+]
