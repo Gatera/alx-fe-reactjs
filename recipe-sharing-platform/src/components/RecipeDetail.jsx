@@ -1,21 +1,37 @@
+import { useEffect, useState } from "react"
 import { useLoaderData, useParams } from "react-router-dom"
 
 function RecipeDetail() {
-    const { recipeId } = useParams()
-    const Recipe = useLoaderData()
+  const [recipe, setRecipe] = useState(null)
+  const loadedRecipe = useLoaderData()
+
+    // const { recipeId } = useParams()
+    // const Recipe = useLoaderData()
+
+    useEffect(() => {
+      if (loadedRecipe) {
+        setRecipe(loadedRecipe)
+      } else {
+        console.log("Not fetched");        
+      }
+    }, [loadedRecipe])
+
+    if (!recipe) {
+      return <div>Loading...</div>
+    }
 
   return (
     <div>
       <div className="w-full bg-white shadow-sm rounded-lg text-left grid grid-cols-1 md:grid-cols-5">
         <div className="col-span-1 md:col-span-2">
-          <img src={Recipe.image} alt="Recipe Image" className="w-full h-full" />
+          <img src={recipe.image} alt="Recipe Image" className="w-full h-full" />
         </div>
         <div className="col-span-1 md:col-span-3 p-5 flex items-center">
           <div className="w-full">
-            <h1 className="text-2xl">{Recipe.title}</h1>
-            <h3 className="text-gray-600 mt-2">{Recipe.summary}</h3>
-            <p className="mt-2"><span className="font-bold">Cook Time:</span> {Recipe.cookingTime}</p>
-            <p className="mt-2"><span className="font-bold">Ingredients:</span> {Recipe.ingredients.join(', ')}</p>
+            <h1 className="text-2xl">{recipe.title}</h1>
+            <h3 className="text-gray-600 mt-2">{recipe.summary}</h3>
+            <p className="mt-2"><span className="font-bold">Cook Time:</span> {recipe.cookingTime}</p>
+            <p className="mt-2"><span className="font-bold">Ingredients:</span> {recipe.ingredients.join(', ')}</p>
           </div>
         </div>
       </div>
