@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import AddRecipeForm from './AddRecipeForm'
 
 
 function HomePage() {
@@ -37,6 +38,11 @@ function HomePage() {
           </Link>
         ))}
       </div>
+
+      <div>
+        <AddRecipeForm />
+      </div>
+
     </div>
   )
 }
