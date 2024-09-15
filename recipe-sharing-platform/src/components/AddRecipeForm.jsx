@@ -31,7 +31,7 @@ const AddRecipeForm = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form Data: ", formData);
-      // Submit form data to the API or state management (e.g., Zustand)
+      // Submit form data to the API or state management
     }
   };
 
