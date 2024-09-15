@@ -10,10 +10,10 @@ const AddRecipeForm = () => {
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; // Destructure the target properties
     setFormData({
       ...formData,
-      [name]: value
+      [name]: e.target.value // Explicitly using 'target.value'
     });
   };
 
@@ -44,7 +44,7 @@ const AddRecipeForm = () => {
           id="title"
           name="title"
           value={formData.title}
-          onChange={handleChange}
+          onChange={handleChange} // Calls handleChange, which uses 'target.value'
           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
         {errors.title && <p className="text-red-500 text-sm">{errors.title}</p>}
@@ -57,7 +57,7 @@ const AddRecipeForm = () => {
           name="ingredients"
           rows="4"
           value={formData.ingredients}
-          onChange={handleChange}
+          onChange={handleChange} // Calls handleChange, which uses 'target.value'
           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
         {errors.ingredients && <p className="text-red-500 text-sm">{errors.ingredients}</p>}
@@ -70,7 +70,7 @@ const AddRecipeForm = () => {
           name="preparation"
           rows="4"
           value={formData.preparation}
-          onChange={handleChange}
+          onChange={handleChange} // Calls handleChange, which uses 'target.value'
           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
         />
         {errors.preparation && <p className="text-red-500 text-sm">{errors.preparation}</p>}
