@@ -6,6 +6,7 @@ function RootLayout() {
         <header>
             <nav>
                 <NavLink to="/">Home</NavLink>
+                <NavLink to="search">Search</NavLink>
             </nav>
         </header>
 
