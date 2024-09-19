@@ -13,7 +13,7 @@ function Search() {
         if (search.trim() === '') {
             setError('Please enter a valid GitHub username.')
         }
-        
+
         setLoading(true)
         setError('')
         setUserData(null)
@@ -22,7 +22,12 @@ function Search() {
             const data = await fetchUserData(search)
             setUserData(data)
         } catch (err) {
-            setError('Looks like we can\'t find the user.')
+            console.error('Error in handlesubmit:', err.message);
+            if (err.response && err.response.status === 404) {
+                setError('Looks like we cant find the user')
+            } else {
+                setError('An error occurred. Please try again later.')
+            }
         } finally {
             setLoading(false)
         }
