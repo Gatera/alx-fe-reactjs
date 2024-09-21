@@ -19,8 +19,6 @@ function Search() {
             return
         }
 
-        /////////////////////////////////////////////////////
-
         setLoading(true)
         setError('')
         setUsersData([])
