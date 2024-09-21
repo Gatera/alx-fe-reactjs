@@ -16,12 +16,14 @@ export const fetchUsers = async ({ username, location, minRepos, page = 1 }) => 
         if (location) query += ` location:${location}`
         if (minRepos) query += ` repos:>=${minRepos}`
 
+        query = query.trim()
+
         if (!query) throw new Error("No search criteria provided.");
         
         // Make API request
         const response = await api.get('/search/users', {
             params: {
-                q: query.trim(),
+                q: query,
                 per_page: 30,
                 page,
             },
