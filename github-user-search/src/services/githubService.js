@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const fetchUsers = async ({ username, location, minRepos, page = 1 }) => {
+export const fetchUserData = async ({ username, location, minRepos, page = 1 }) => {
     
     try {
         //Building the search query

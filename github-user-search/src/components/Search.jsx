@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { fetchUsers } from "../services/githubService"
+import { fetchUserData } from "../services/githubService"
 
 function Search() {
     const [username, setUsername] = useState('')
@@ -26,7 +26,7 @@ function Search() {
         setHasMore(true)
 
         try {
-            const data = await fetchUsers({ username, location, minRepos, page: 1 });
+            const data = await fetchUserData({ username, location, minRepos, page: 1 });
             setUsersData(data)
             if (data.length < 30) setHasMore(false)
         } catch (err) {
@@ -45,7 +45,7 @@ function Search() {
 
         try {
             const nextPage = page + 1
-            const data = await fetchUsers({ username, location, minRepos, page: nextPage })
+            const data = await fetchUserData({ username, location, minRepos, page: nextPage })
             setUserData((prev) => [...prev, ...data])
             setPage(nextPage)
             if (data.length < 30) setHasMore(false)
