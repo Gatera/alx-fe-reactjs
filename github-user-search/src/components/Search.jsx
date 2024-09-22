@@ -30,7 +30,6 @@ function Search() {
             setUsersData(data)
             if (data.length < 30) setHasMore(false)
         } catch (err) {
-            console.error('Error in handleSubmit:', err.message);
             setError('An error occured. Please try again later.')
         } finally {
             setLoading(false)
@@ -50,7 +49,6 @@ function Search() {
             setPage(nextPage)
             if (data.length < 30) setHasMore(false)
         } catch (err) {
-            console.error('Error loading more users:', err.message);
             setError('An error occured while loading more results.')
         } finally {
             setLoading(false)

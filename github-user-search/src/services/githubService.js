@@ -38,7 +38,6 @@ export const fetchUserData = async ({ username, location, minRepos, page = 1 }) 
 
         return detailedUsers;
     } catch (error) {
-        console.error('Error fetching users:', error.message);
         throw error;
     }
 };
